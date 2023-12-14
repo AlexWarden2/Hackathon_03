@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600&family=Inter:wght@400;600&display=swap');
+
 * {
-    --background: #FFF7E9;
-    --text: #1746A2;
-    --accent: #FF731D;
+    --background: #2c2c2c;
+    --text: #a5c3ff;
+    --accent: #9180ff;
     box-sizing: border-box;
+    font-family: 'Inter';
 }
 
 body {
@@ -105,4 +108,21 @@ form > input {
 
 .hide-item {
     display: none;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  .table td, .table th {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  /* Hover effect on rows */
+  .tablle.tr:hover {
+    background-color: #e0e0e0;
   }

@@ -13,7 +13,7 @@ export default function ShowCard ({ show }) {
 
             {show.powerstats 
             ? <span> 
-                <table>
+                <table class='table'>
                     <tr>
                         <th>Powerstats</th>
                         <th>Rating</th>
