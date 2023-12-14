@@ -7,12 +7,12 @@ export default function SearchWidget () {
     const [englishOnly, setEnglishOnly] = useState(false);
 
     const [showData, setShowData] = useState([]);
-    const [searchString, setSearchString] = useState("Married at First Sight");
+    const [searchString, setSearchString] = useState("Archangel");
 
     useEffect(() => {
 
         async function searchAPI() {
-            const response = await fetch(`https://api.tvmaze.com/search/shows?q=${searchString}`);
+            const response = await fetch(`https://www.superheroapi.com/api.php/6891348727638701/?q=${searchString}`);
             const rawData = await response.json();
             const data = rawData.map(s => s.show);
             setShowData(data);
@@ -28,6 +28,11 @@ export default function SearchWidget () {
 
     return <>
         <SearchForm handleSearch={handleSearch} lastSearch={searchString}/>
-        {<ShowList showData={showData} ratingOrder={ratingOrder} englishOnly={englishOnly} setRatingOrder={setRatingOrder} setEnglishOnly={setEnglishOnly}/> }
+        {<ShowList showData={showData} 
+        // ratingOrder={ratingOrder} 
+        // englishOnly={englishOnly} 
+        // setRatingOrder={setRatingOrder} 
+        // setEnglishOnly={setEnglishOnly}
+        /> }
     </>
 };
