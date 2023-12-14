@@ -102,3 +102,7 @@ form > input {
 .show-card h2 {
     margin-top: 0rem;
 }
+
+.hide-item {
+    display: none;
+  }
