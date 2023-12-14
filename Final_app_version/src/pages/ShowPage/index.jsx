@@ -4,7 +4,7 @@ import { ShowCard } from '../../components';
 
 export default function ShowPage() {
   const {id} = useParams();
-  const [show, setShow] = useState({ image: {}, work: {} })
+  const [show, setShow] = useState({ image: {}, work: {}, appearance: {} })
 
   useEffect(() => {
 

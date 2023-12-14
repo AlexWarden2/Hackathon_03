@@ -7,11 +7,11 @@ export default function ShowCard ({ show }) {
                 <img src={show.image.url}></img>
             </div>
             <div>
-                {/* {show.rating.average ? <span> ({ show.rating.average }/10)</span> : ""} */}
                 <h2>{show.name}</h2>
                 <em>{show.work.occupation}</em>
-                {/* <div dangerouslySetInnerHTML={{ __html: show.summary }}></div> */}
+                <p>Height: {show.appearance.height}, Weight: {show.appearance.weight}</p>
             </div>
+                <footer>Publisher: {show.biography.publisher}</footer>
         </div>
     )
 };
