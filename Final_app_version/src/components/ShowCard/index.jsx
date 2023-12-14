@@ -17,30 +17,37 @@ export default function ShowCard ({ show }) {
                     <tr>
                         <th>Powerstats</th>
                         <th>Rating</th>
+                        <th>Selector</th>
                     </tr>
                     <tr>
                         <th>Intelligence</th>
                         <th>{show.powerstats.intelligence}</th>
+                        <th><button id='selector'>Select</button></th>
                     </tr>
                     <tr>
                         <th>Strength</th>
                         <th>{show.powerstats.strength}</th>
+                        <th><button id='selector'>Select</button></th>
                     </tr>
                     <tr>
                         <th>Speed</th>
                         <th>{show.powerstats.speed}</th>
+                        <th><button id='selector'>Select</button></th>
                     </tr>
                     <tr>
                         <th>Durability</th>
                         <th>{show.powerstats.durability}</th>
+                        <th><button id='selector'>Select</button></th>
                     </tr>
                     <tr>
                         <th>Power</th>
                         <th>{show.powerstats.power}</th>
+                        <th><button id='selector'>Select</button></th>
                     </tr>
                     <tr>
                         <th>Combat</th>
                         <th>{show.powerstats.combat}</th>
+                        <th><button id='selector'>Select</button></th>
                     </tr>
                 </table>
             </span> 
