@@ -12,7 +12,6 @@ const App = () => {
                 <Route index element={<Pages.HomePage />}/>
                 <Route path="/shows" element={<Pages.ShowsPage />}/>
                 <Route path="/shows/:id" element={<Pages.ShowPage />}/>
-                <Route path="/search" element={<Pages.SearchPage />}/>
                 <Route path="*" element={<Pages.NotFoundPage />}/>
             </Route>
         </Routes>

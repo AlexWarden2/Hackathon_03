@@ -10,9 +10,6 @@ export default function ShowCard ({ show }) {
             <div>
                 <h2>{show.name}</h2>
                 <em>{show.work.occupation}</em>
-                {/* <p>Height: {show.appearance.height}, Weight: {show.appearance.weight}</p>
-                <div> <p>Publisher: {show.biography.publisher}</p>
-            </div> */}
 
             {show.powerstats 
             ? <span> 
