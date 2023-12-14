@@ -3,7 +3,7 @@ import React from 'react';
 export default function ShowCard ({ show }) {
     return (
         <>
-        <div className="show-card">
+        <div className="show-card" class="hide-item" id='hiddenCard'>
             <div>
                 <img src={show.image.url}></img>
             </div>
@@ -13,7 +13,7 @@ export default function ShowCard ({ show }) {
 
             {show.powerstats 
             ? <span> 
-                <table class='table'>
+                <table>
                     <tr>
                         <th>Powerstats</th>
                         <th>Rating</th>
