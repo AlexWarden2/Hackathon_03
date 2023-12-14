@@ -8,12 +8,10 @@ const linkStyle = {
 export default function HomePage() {
     return (
         <>
-            <h1>Top TV</h1>
-            <em>All about the smaller silver screen</em>
-            <ul>
-                <li><Link to="/shows" style={linkStyle}>Explore shows</Link></li>
-                <li><Link to="/search" style={linkStyle}>Search for your favorite show</Link></li>
-            </ul>
+            <h1>Top trumps App</h1>
+            <em>Play your favourite heroes against eachother!</em>
+            <li><Link to="/shows" style={linkStyle}>Explore heroes</Link></li>
+            <li><Link to="/shows/1" style={linkStyle}>Play Game</Link></li>
         </>
     )
 };

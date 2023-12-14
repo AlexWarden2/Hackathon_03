@@ -9,7 +9,6 @@ export default function Header () {
                 <nav>
                     <NavLink to="/" style={styles}>Home</NavLink>
                     <NavLink to="/shows" style={styles}>Shows</NavLink>
-                    <NavLink to="/search" style={styles}>Search shows</NavLink>
                 </nav>
             </header>
             <Outlet />
